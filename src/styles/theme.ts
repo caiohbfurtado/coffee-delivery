@@ -27,7 +27,7 @@ export const THEME = {
   },
   FONTS: {
     TITLE: 'Baloo2_700Bold',
-    TEXT: 'Roboto_400Bold',
+    TEXT: 'Roboto_400Regular',
     BOLD: 'Roboto_700Bold',
   },
 }
