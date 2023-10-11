@@ -1,11 +1,12 @@
 import { View } from 'react-native'
 import { styles } from './styles'
-import { Cart } from '../../components/Cart'
+import { Tag } from '../../components/Tag'
+import { useState } from 'react'
 
 export function Home() {
   return (
     <View style={styles.wrapper}>
-      <Cart items={3} />
+      <Tag title="Teste" />
     </View>
   )
 }

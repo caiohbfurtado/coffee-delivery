@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     backgroundColor: THEME.COLORS.BRANDING.PURPLE_DARK,
   },
   label: {
-    fontFamily: THEME.FONTS.TITLE,
+    fontFamily: THEME.FONTS.BOLD,
     fontSize: 14,
     textTransform: 'uppercase',
     color: THEME.COLORS.BASE.WHITE,
