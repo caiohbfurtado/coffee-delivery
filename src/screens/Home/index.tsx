@@ -1,11 +1,13 @@
-import { View } from 'react-native'
+import { Keyboard, TouchableWithoutFeedback, View } from 'react-native'
 import { styles } from './styles'
-import { InputNumber } from '../../components/InputNumber'
+import { Input } from '../../components/Input'
 
 export function Home() {
   return (
-    <View style={styles.wrapper}>
-      <InputNumber value={0} />
-    </View>
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+      <View style={styles.wrapper}>
+        <Input />
+      </View>
+    </TouchableWithoutFeedback>
   )
 }
