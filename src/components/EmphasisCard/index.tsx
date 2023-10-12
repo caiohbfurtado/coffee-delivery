@@ -25,7 +25,6 @@ export function EmphasisCard({
       currency: 'BRL',
     })
     .replace('R$', '')
-    .trim()
 
   return (
     <View style={[styles.wrapper, isMD && styles.MDWrapper]}>
@@ -35,8 +34,10 @@ export function EmphasisCard({
         alt="imagem do café"
       />
       <View style={[styles.content, isMD && styles.MDContent]}>
-        <View style={[styles.badge, styles.MDBadge]}>
-          <Text style={[styles.badgeText, styles.MDBadgeText]}>{type}</Text>
+        <View style={[styles.badge, isMD && styles.MDBadge]}>
+          <Text style={[styles.badgeText, isMD && styles.MDBadgeText]}>
+            {type}
+          </Text>
         </View>
 
         <View style={styles.coffeeInfo}>
